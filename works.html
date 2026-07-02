@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Works — PeeCr8s · Prosperity Akinyeye</title>
+<meta name="description" content="All AI automation projects by Prosperity Akinyeye (PeeCr8s) — n8n, Make.com, AI chatbots, voice agents, and content pipelines.">
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico?v=3">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png?v=3">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png?v=3">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="case-study.css">
+<style>
+  .works-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin: 56px 0 80px; }
+  .work-card {
+    border-radius: 4px; overflow: hidden; border: 1px solid var(--border);
+    background: var(--surface); position: relative;
+    transition: border-color .25s, transform .25s;
+    text-decoration: none; display: block; color: inherit;
+  }
+  .work-card:hover { border-color: rgba(201,243,29,0.4); transform: translateY(-4px); }
+  .work-img { aspect-ratio: 16/10; overflow: hidden; background: #111; position: relative; }
+  .work-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s cubic-bezier(.33,1,.68,1); }
+  .work-card:hover .work-img img { transform: scale(1.05); }
+  .work-body { padding: 28px 32px; }
+  .work-tags { display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; }
+  .work-tag {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--accent);
+    border: 1px solid rgba(201,243,29,0.25); padding: 3px 10px; border-radius: 2px;
+  }
+  .work-title { font-family: var(--font-display); font-weight: 700; font-size: 20px; margin-bottom: 10px; color: var(--text); }
+  .work-desc { font-size: 14px; color: var(--dim); line-height: 1.65; }
+  @media (max-width: 900px) { .works-grid { grid-template-columns: 1fr; } }
+  @media (prefers-reduced-motion: no-preference) {
+    [data-reveal] { opacity: 0; transform: translateY(40px); transition: opacity .6s ease, transform .6s ease; }
+    [data-reveal].visible { opacity: 1; transform: none; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><img src="assets/logo-square.png?v=3" alt="PeeCr8s logo">PeeCr8s<span>.</span></a>
+    <a href="https://www.upwork.com/freelancers/prosperityakinyeye" target="_blank" rel="noopener" class="nav-cta">HIRE ME</a>
+  </div>
+</nav>
+
+<header class="case-hero">
+  <div class="glow"></div>
+  <div class="container">
+    <a href="index.html" class="back-link">&larr; Back home</a>
+    <div class="case-tags"><span class="case-tag">Portfolio</span><span class="case-tag">14 Projects</span></div>
+    <h1>My Works</h1>
+    <p class="case-lede">Every project below is a real automation running in production — AI chatbots, content engines, sync systems, and data pipelines. Click any card for the full case study.</p>
+  </div>
+</header>
+
+<main class="container">
+  <div class="works-grid">
+
+    <a class="work-card" href="case-ai-influencer.html" data-reveal>
+      <div class="work-img"><img src="assets/ai-influencer.png" alt="AI influencer content pipeline" loading="lazy"></div>
+      <div class="work-body">
+        <div class="work-tags"><span class="work-tag">Make.com</span><span class="work-tag">HeyGen</span><span class="work-tag">Auto-Posting</span></div>
+        <div class="work-title">AI Influencer Content Pipeline</div>
+        <div class="work-desc">A fully autonomous influencer engine: an RSS trigger feeds a GPT viral filter that scripts content, generates images, renders a HeyGen avatar video, and auto-posts to Instagram, YouTube, and TikTok.</div>
+      </div>
+    </a>
+
+    <a class="work-card" href="case-whatsapp-rag.html" data-reveal>
+      <div class="work-img"><img src="assets/whatsapp-rag.png" alt="WhatsApp AI assistant with RAG" loading="lazy"></div>
+      <div class="work-body">
+        <div class="work-tags"><span class="work-tag">n8n</span><span class="work-tag">WhatsApp</span><span class="work-tag">Vector DB</span></div>
+        <div class="work-title">WhatsApp AI Assistant (RAG)</div>
+        <div class="work-desc">A multimodal WhatsApp assistant that answers from a private knowledge base — handling text, voice notes, images, and PDFs, with documents embedded into a MongoDB vector store for accurate retrieval.</div>
+      </div>
+    </a>
+
+    <a class="work-card" href="case-meta-chatbot.html" data-reveal>
+      <div class="work-img"><img src="assets/meta-chatbot.png" alt="Meta Ads AI chatbot assistant" loading="lazy"></div>
+      <div class="work-body">
+        <div class="work-tags"><span class="work-tag">n8n</span><span class="work-tag">AI Chatbot</span><span class="work-tag">OpenAI</span></div>
+        <div class="work-title">Meta Ads AI Chatbot Assistant</div>
+        <div class="work-desc">A conversational AI assistant built in n8n that answers questions about Meta ad accounts and campaign insights on demand — pulling live data and replying in chat like an on-call media buyer.</div>
+      </div>
+    </a>
+
+    <a class="work-card" href="case-ai-video.html" data-reveal>
+      <div class="work-img"><img src="assets/ai-video.png" alt="AI video generation and posting" loading="lazy"></div>
+      <div class="work-body">
+        <div class="work-tags"><span class="work-tag">n8n</span><span class="work-tag">Seedance</span><span class="work-tag">Fal AI</span></div>
+        <div class="work-title">AI Video Generation &amp; Posting</div>
+        <div class="work-desc">An end-to-end short-video factory: an RSS trigger sparks an AI video idea, generates clips with Seedance, adds sound, stitches the final cut with Fal AI, and uploads straight to TikTok and YouTube.</div>
+      </div>
+    </a>
+
+    <a class="work-card" href="case-content-calendar.html" data-reveal>
+      <div class="work-img"><img src="assets/content-calendar.png" alt="AI content calendar engine" loading="lazy"></div>
+      <div class="work-body">
+        <div class="work-tags"><span class="work-tag">n8n</span><span class="work-tag">Claude</span><span class="work-tag">Research</span></div>
+        <div class="work-title">AI Content Calendar Engine</div>
+        <div class="work-desc">A research-driven content engine that studies competitors and trends across YouTube, Reddit, TikTok, Instagram, and LinkedIn, then uses Claude to generate a full content plan, write it into a Google Doc, and email the calendar.</div>
+      </div>
+    </a>
+
+    <a class="work-card" href="case-messenger-bot.html" data-reveal>
+      <div class="work-img"><img src="assets/messenger-bot.jpg" alt="Facebook Messenger AI bot" loading="lazy"></div>
+      <div class="work-body">
+        <div class="work-tags"><span class="work-tag">n8n</span><span class="work-tag">Messenger</span><span class="work-tag">Gemini</span></div>
+        <div class="work-title">Facebook Messenger AI Bot</div>
+        <div class="work-desc">A Facebook Messenger assistant that reads and replies to DMs in real time with Gemini — complete with typing indicators, conversation memory, message chunking, and image &amp; video responses.</div>
+      </div>
+    </a>
+
+    <a class="work-card" href="case-faceless-video.html" data-reveal>
+      <div class="work-img"><img src="assets/faceless-video.png" alt="Faceless AI video engine" loading="lazy"></div>
+      <div class="work-body">
+        <div class="work-tags"><span class="work-tag">n8n</span><span class="work-tag">Telegram</span><span class="work-tag">TTS</span></div>
+        <div class="work-title">Faceless AI Video Engine</div>
+        <div class="work-desc">A Telegram-triggered faceless video factory: it selects a winning theme, builds a structured video prompt, generates AI voiceover and visuals, assembles the clip, and tracks every job through to completion.</div>
+      </div>
+    </a>
+
+    <a class="work-card" href="case-xero-sync.html" data-reveal>
+      <div class="work-img"><img src="assets/xero-sync.png" alt="PrestaShop to Xero order sync" loading="lazy"></div>
+      <div class="work-body">
+        <div class="work-tags"><span class="work-tag">Make.com</span><span class="work-tag">PrestaShop</span><span class="work-tag">Xero</span></div>
+        <div class="work-title">PrestaShop → Xero Order Sync</div>
+        <div class="work-desc">An order-to-accounting sync that pushes every PrestaShop website order into Xero as contacts and invoices automatically, every 15 minutes — wiping out manual bookkeeping and data entry.</div>
+      </div>
+    </a>
+
+    <a class="work-card" href="case-stock-sync.html" data-reveal>
+      <div class="work-img"><img src="assets/stock-sync.png" alt="Xero to PrestaShop stock sync" loading="lazy"></div>
+      <div class="work-body">
+        <div class="work-tags"><span class="work-tag">Make.com</span><span class="work-tag">Xero</span><span class="work-tag">PrestaShop</span></div>
+        <div class="work-title">Xero → PrestaShop Stock Sync</div>
+        <div class="work-desc">The inbound half of inventory automation: when a purchase order lands in Xero, it iterates the items and automatically increases the matching product stock on the PrestaShop store — every 15 minutes.</div>
+      </div>
+    </a>
+
+    <a class="work-card" href="case-book-editing.html" data-reveal>
+      <div class="work-img"><img src="assets/book-editing.png" alt="AI book editing pipeline" loading="lazy"></div>
+      <div class="work-body">
+        <div class="work-tags"><span class="work-tag">n8n</span><span class="work-tag">GPT-5 Mini</span><span class="work-tag">Google Drive</span></div>
+        <div class="work-title">AI Book Editing Pipeline</div>
+        <div class="work-desc">A multi-phase manuscript editor: drop a .docx in Google Drive and it extracts the text, runs a macro-level structural analysis with GPT-5 Mini, and saves a polished editorial blueprint back to Drive.</div>
+      </div>
+    </a>
+
+    <a class="work-card" href="case-performance-loop.html" data-reveal>
+      <div class="work-img"><img src="assets/performance-loop.png" alt="Content performance learning loop" loading="lazy"></div>
+      <div class="work-body">
+        <div class="work-tags"><span class="work-tag">Make.com</span><span class="work-tag">Metricool</span><span class="work-tag">OpenAI</span></div>
+        <div class="work-title">Content Performance Learning Loop</div>
+        <div class="work-desc">A weekly loop that pulls post performance from Metricool, uses AI to learn what worked, and writes those insights back to Google Sheets so the content engine keeps getting smarter over time.</div>
+      </div>
+    </a>
+
+    <a class="work-card" href="case-reporting.html" data-reveal>
+      <div class="work-img"><img src="assets/reporting.png" alt="Automated reporting engine" loading="lazy"></div>
+      <div class="work-body">
+        <div class="work-tags"><span class="work-tag">n8n</span><span class="work-tag">Reporting</span><span class="work-tag">JavaScript</span></div>
+        <div class="work-title">Automated Reporting Engine</div>
+        <div class="work-desc">A reporting engine that pulls daily and weekly data, calculates the key metrics in code, merges everything into one clean report, and sends it out automatically — no manual spreadsheets.</div>
+      </div>
+    </a>
+
+    <a class="work-card" href="case-instagram-dm.html" data-reveal>
+      <div class="work-img"><img src="assets/instagram-dm.png" alt="Instagram DM lead automation" loading="lazy"></div>
+      <div class="work-body">
+        <div class="work-tags"><span class="work-tag">ManyChat</span><span class="work-tag">Instagram</span><span class="work-tag">Lead Capture</span></div>
+        <div class="work-title">Instagram DM Lead Automation</div>
+        <div class="work-desc">A keyword-triggered ManyChat flow: when someone comments or DMs a keyword, it instantly replies with a registration link — capturing leads and driving signups to a live workshop on autopilot.</div>
+      </div>
+    </a>
+
+    <a class="work-card" href="case-fight-odds.html" data-reveal>
+      <div class="work-img"><img src="assets/fight-odds.png" alt="Fight odds scraper" loading="lazy"></div>
+      <div class="work-body">
+        <div class="work-tags"><span class="work-tag">Make.com</span><span class="work-tag">OpenAI</span><span class="work-tag">Supabase</span></div>
+        <div class="work-title">Fight Odds Scraper</div>
+        <div class="work-desc">An hourly pipeline that scrapes live fight odds, uses AI to parse the raw HTML into clean structured data, and upserts fighter records into a Supabase database for downstream use.</div>
+      </div>
+    </a>
+
+  </div>
+
+  <div class="case-cta">
+    <div class="glow"></div>
+    <h2>Want something like these for your business?</h2>
+    <p>Tell me what is eating your team's time and I'll show you exactly how to automate it.</p>
+    <div class="case-cta-row">
+      <a class="btn-primary" href="https://www.upwork.com/freelancers/prosperityakinyeye" target="_blank" rel="noopener">Hire me on Upwork</a>
+      <a class="btn-ghost" href="index.html#contact">Send a message</a>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">PeeCr8s<span>.</span></div>
+    <div class="footer-copy">&copy; 2026 Prosperity Akinyeye. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+  const revealEls = document.querySelectorAll('[data-reveal]');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+    });
+  }, { threshold: 0.1 });
+  revealEls.forEach(el => observer.observe(el));
+</script>
+<script src="cursor.js?v=2"></script>
+</body>
+</html>
